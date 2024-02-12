@@ -64,14 +64,45 @@
 
 // for in Loop (Object) *******************
 
-const person = {
-    name: "jack",
-    age: 38,
-    city: "london", 
-    height: "6 Feet"
-}
+// const person = {
+//     name: "jack",
+//     age: 38,
+//     city: "london", 
+//     height: "6 Feet"
+// }
 
-for(let item in person){
-    console.log(item);
-    console.log(person[item]);
-}
+// for(let item in person){
+//     console.log(item);
+//     console.log(person[item]);
+// }
+
+
+// Array concat***************
+
+// const arr1=['Q', 'B', 'D']
+// const arr2=['U', 'O', 'H']
+// const arr3 = arr1.concat(arr2);
+// console.log(arr3);
+
+
+// Array filter*******************
+const numberArray = [7, 3, 4, 6, 4, 1, 0, 8]
+ const result = numberArray.filter(function(item){
+    return item > 4
+ })
+ console.log(result);
+
+
+ // Array find and findIndex*********************
+ const numArray = [7, 3, 4, 6, 4, 1, 0, 8]
+const result1 = numArray.find(function(item){
+    return item < 7;
+})
+
+console.log(result1);
+ const numArray2 = [7, 3, 4, 6, 4, 1, 0, 8]
+const result2 = numArray.findIndex(function(item){
+    return item < 7;
+})
+
+console.log(result2);
